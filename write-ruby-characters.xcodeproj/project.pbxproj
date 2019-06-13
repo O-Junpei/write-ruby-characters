@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28C22B29897003AC446 /* AppDelegate.swift */; };
+		8DE6A28F22B29897003AC446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* ViewController.swift */; };
+		8DE6A29222B29897003AC446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29022B29897003AC446 /* Main.storyboard */; };
+		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
+		8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */; };
+		8DE6A2A222B29898003AC446 /* write_ruby_charactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */; };
+		8DE6A2AD22B29898003AC446 /* write_ruby_charactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DE6A29E22B29898003AC446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DE6A28122B29897003AC446 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DE6A28822B29897003AC446;
+			remoteInfo = "write-ruby-characters";
+		};
+		8DE6A2A922B29898003AC446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DE6A28122B29897003AC446 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DE6A28822B29897003AC446;
+			remoteInfo = "write-ruby-characters";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DE6A28922B29897003AC446 /* write-ruby-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "write-ruby-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE6A28C22B29897003AC446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DE6A28E22B29897003AC446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DE6A29122B29897003AC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DE6A29322B29898003AC446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DE6A29622B29898003AC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DE6A29822B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE6A29D22B29898003AC446 /* write-ruby-charactersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "write-ruby-charactersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = write_ruby_charactersTests.swift; sourceTree = "<group>"; };
+		8DE6A2A322B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE6A2A822B29898003AC446 /* write-ruby-charactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "write-ruby-charactersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = write_ruby_charactersUITests.swift; sourceTree = "<group>"; };
+		8DE6A2AE22B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DE6A28622B29897003AC446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE6A29A22B29898003AC446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE6A2A522B29898003AC446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DE6A28022B29897003AC446 = {
+			isa = PBXGroup;
+			children = (
+				8DE6A28B22B29897003AC446 /* write-ruby-characters */,
+				8DE6A2A022B29898003AC446 /* write-ruby-charactersTests */,
+				8DE6A2AB22B29898003AC446 /* write-ruby-charactersUITests */,
+				8DE6A28A22B29897003AC446 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DE6A28A22B29897003AC446 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6A28922B29897003AC446 /* write-ruby-characters.app */,
+				8DE6A29D22B29898003AC446 /* write-ruby-charactersTests.xctest */,
+				8DE6A2A822B29898003AC446 /* write-ruby-charactersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DE6A28B22B29897003AC446 /* write-ruby-characters */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6A28C22B29897003AC446 /* AppDelegate.swift */,
+				8DE6A28E22B29897003AC446 /* ViewController.swift */,
+				8DE6A29022B29897003AC446 /* Main.storyboard */,
+				8DE6A29322B29898003AC446 /* Assets.xcassets */,
+				8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */,
+				8DE6A29822B29898003AC446 /* Info.plist */,
+			);
+			path = "write-ruby-characters";
+			sourceTree = "<group>";
+		};
+		8DE6A2A022B29898003AC446 /* write-ruby-charactersTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */,
+				8DE6A2A322B29898003AC446 /* Info.plist */,
+			);
+			path = "write-ruby-charactersTests";
+			sourceTree = "<group>";
+		};
+		8DE6A2AB22B29898003AC446 /* write-ruby-charactersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */,
+				8DE6A2AE22B29898003AC446 /* Info.plist */,
+			);
+			path = "write-ruby-charactersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DE6A28822B29897003AC446 /* write-ruby-characters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE6A2B122B29898003AC446 /* Build configuration list for PBXNativeTarget "write-ruby-characters" */;
+			buildPhases = (
+				8DE6A28522B29897003AC446 /* Sources */,
+				8DE6A28622B29897003AC446 /* Frameworks */,
+				8DE6A28722B29897003AC446 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "write-ruby-characters";
+			productName = "write-ruby-characters";
+			productReference = 8DE6A28922B29897003AC446 /* write-ruby-characters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DE6A29C22B29898003AC446 /* write-ruby-charactersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE6A2B422B29898003AC446 /* Build configuration list for PBXNativeTarget "write-ruby-charactersTests" */;
+			buildPhases = (
+				8DE6A29922B29898003AC446 /* Sources */,
+				8DE6A29A22B29898003AC446 /* Frameworks */,
+				8DE6A29B22B29898003AC446 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DE6A29F22B29898003AC446 /* PBXTargetDependency */,
+			);
+			name = "write-ruby-charactersTests";
+			productName = "write-ruby-charactersTests";
+			productReference = 8DE6A29D22B29898003AC446 /* write-ruby-charactersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DE6A2A722B29898003AC446 /* write-ruby-charactersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE6A2B722B29898003AC446 /* Build configuration list for PBXNativeTarget "write-ruby-charactersUITests" */;
+			buildPhases = (
+				8DE6A2A422B29898003AC446 /* Sources */,
+				8DE6A2A522B29898003AC446 /* Frameworks */,
+				8DE6A2A622B29898003AC446 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DE6A2AA22B29898003AC446 /* PBXTargetDependency */,
+			);
+			name = "write-ruby-charactersUITests";
+			productName = "write-ruby-charactersUITests";
+			productReference = 8DE6A2A822B29898003AC446 /* write-ruby-charactersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DE6A28122B29897003AC446 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.swiswiswift;
+				TargetAttributes = {
+					8DE6A28822B29897003AC446 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					8DE6A29C22B29898003AC446 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8DE6A28822B29897003AC446;
+					};
+					8DE6A2A722B29898003AC446 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8DE6A28822B29897003AC446;
+					};
+				};
+			};
+			buildConfigurationList = 8DE6A28422B29897003AC446 /* Build configuration list for PBXProject "write-ruby-characters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DE6A28022B29897003AC446;
+			productRefGroup = 8DE6A28A22B29897003AC446 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DE6A28822B29897003AC446 /* write-ruby-characters */,
+				8DE6A29C22B29898003AC446 /* write-ruby-charactersTests */,
+				8DE6A2A722B29898003AC446 /* write-ruby-charactersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DE6A28722B29897003AC446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */,
+				8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */,
+				8DE6A29222B29897003AC446 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE6A29B22B29898003AC446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE6A2A622B29898003AC446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DE6A28522B29897003AC446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE6A28F22B29897003AC446 /* ViewController.swift in Sources */,
+				8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE6A29922B29898003AC446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE6A2A222B29898003AC446 /* write_ruby_charactersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE6A2A422B29898003AC446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE6A2AD22B29898003AC446 /* write_ruby_charactersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DE6A29F22B29898003AC446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DE6A28822B29897003AC446 /* write-ruby-characters */;
+			targetProxy = 8DE6A29E22B29898003AC446 /* PBXContainerItemProxy */;
+		};
+		8DE6A2AA22B29898003AC446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DE6A28822B29897003AC446 /* write-ruby-characters */;
+			targetProxy = 8DE6A2A922B29898003AC446 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DE6A29022B29897003AC446 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE6A29122B29897003AC446 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE6A29622B29898003AC446 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DE6A2AF22B29898003AC446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DE6A2B022B29898003AC446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DE6A2B222B29898003AC446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RH346BQ66;
+				INFOPLIST_FILE = "write-ruby-characters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiswiswift.write-ruby-characters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DE6A2B322B29898003AC446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RH346BQ66;
+				INFOPLIST_FILE = "write-ruby-characters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiswiswift.write-ruby-characters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8DE6A2B522B29898003AC446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RH346BQ66;
+				INFOPLIST_FILE = "write-ruby-charactersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiswiswift.write-ruby-charactersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/write-ruby-characters.app/write-ruby-characters";
+			};
+			name = Debug;
+		};
+		8DE6A2B622B29898003AC446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RH346BQ66;
+				INFOPLIST_FILE = "write-ruby-charactersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiswiswift.write-ruby-charactersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/write-ruby-characters.app/write-ruby-characters";
+			};
+			name = Release;
+		};
+		8DE6A2B822B29898003AC446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RH346BQ66;
+				INFOPLIST_FILE = "write-ruby-charactersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiswiswift.write-ruby-charactersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "write-ruby-characters";
+			};
+			name = Debug;
+		};
+		8DE6A2B922B29898003AC446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RH346BQ66;
+				INFOPLIST_FILE = "write-ruby-charactersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swiswiswift.write-ruby-charactersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "write-ruby-characters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DE6A28422B29897003AC446 /* Build configuration list for PBXProject "write-ruby-characters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE6A2AF22B29898003AC446 /* Debug */,
+				8DE6A2B022B29898003AC446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE6A2B122B29898003AC446 /* Build configuration list for PBXNativeTarget "write-ruby-characters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE6A2B222B29898003AC446 /* Debug */,
+				8DE6A2B322B29898003AC446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE6A2B422B29898003AC446 /* Build configuration list for PBXNativeTarget "write-ruby-charactersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE6A2B522B29898003AC446 /* Debug */,
+				8DE6A2B622B29898003AC446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE6A2B722B29898003AC446 /* Build configuration list for PBXNativeTarget "write-ruby-charactersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE6A2B822B29898003AC446 /* Debug */,
+				8DE6A2B922B29898003AC446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DE6A28122B29897003AC446 /* Project object */;
+}
