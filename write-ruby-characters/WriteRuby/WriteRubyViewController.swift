@@ -15,6 +15,7 @@ class WriteRubyViewController: UIViewController {
 
         textView = UITextView()
         textView.backgroundColor = .red
+        textView.delegate = self
         view.addSubview(textView)
 
         writeRubyButton = UIButton()
@@ -36,9 +37,16 @@ class WriteRubyViewController: UIViewController {
         guard let text = textView.text else {
             return
         }
+        textView.resignFirstResponder()
         presenter.didTapWriteRubyButton(text: text)
     }
 }
+
+extension WriteRubyViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+    }
+}
+
 
 
 extension WriteRubyViewController: WriteRubyPresenterOutput {
