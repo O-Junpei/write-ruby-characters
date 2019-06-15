@@ -6,6 +6,7 @@ target 'write-ruby-characters' do
   use_frameworks!
 
   # Pods for write-ruby-characters
+  pod 'Alamofire'
 
   target 'write-ruby-charactersTests' do
     inherit! :search_paths

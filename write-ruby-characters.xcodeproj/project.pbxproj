@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		793EFBA2A1035008023FD344 /* Pods_write_ruby_characters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */; };
 		7B6CB19EF156B49FBED5B642 /* Pods_write_ruby_charactersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38C9EFB1E825EDC9D6C970 /* Pods_write_ruby_charactersTests.framework */; };
 		8D76822A22B49D0900C06BC9 /* WriteRubyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822922B49D0900C06BC9 /* WriteRubyPresenter.swift */; };
+		8D76822C22B4AF5300C06BC9 /* WriteRubyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */; };
+		8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822D22B4BD9900C06BC9 /* APIResponse.swift */; };
+		8D76823022B4C27200C06BC9 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822F22B4C27200C06BC9 /* Credential.swift */; };
 		8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28C22B29897003AC446 /* AppDelegate.swift */; };
 		8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */; };
 		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		7B336F42BE78623C0232581F /* Pods_write_ruby_charactersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_write_ruby_charactersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ECB8A6D02C0104FA3222E5 /* Pods-write-ruby-characters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-characters.release.xcconfig"; path = "Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters.release.xcconfig"; sourceTree = "<group>"; };
 		8D76822922B49D0900C06BC9 /* WriteRubyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyPresenter.swift; sourceTree = "<group>"; };
+		8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyModel.swift; sourceTree = "<group>"; };
+		8D76822D22B4BD9900C06BC9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		8D76822F22B4C27200C06BC9 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		8DE6A28922B29897003AC446 /* write-ruby-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "write-ruby-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A28C22B29897003AC446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		8D76822622B49B0C00C06BC9 /* WriteRuby */ = {
 			isa = PBXGroup;
 			children = (
+				8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */,
 				8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */,
 				8D76822922B49D0900C06BC9 /* WriteRubyPresenter.swift */,
 			);
@@ -134,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE6A28C22B29897003AC446 /* AppDelegate.swift */,
+				8D76822D22B4BD9900C06BC9 /* APIResponse.swift */,
+				8D76822F22B4C27200C06BC9 /* Credential.swift */,
 				8D76822622B49B0C00C06BC9 /* WriteRuby */,
 				8DE6A29322B29898003AC446 /* Assets.xcassets */,
 				8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */,
@@ -184,6 +193,7 @@
 				8DE6A28522B29897003AC446 /* Sources */,
 				8DE6A28622B29897003AC446 /* Frameworks */,
 				8DE6A28722B29897003AC446 /* Resources */,
+				3B441C14ECFB23CD6982EBAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +312,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B441C14ECFB23CD6982EBAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E343A63751F885F3227517A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,7 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */,
+				8D76822C22B4AF5300C06BC9 /* WriteRubyModel.swift in Sources */,
 				8D76822A22B49D0900C06BC9 /* WriteRubyPresenter.swift in Sources */,
+				8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */,
+				8D76823022B4C27200C06BC9 /* Credential.swift in Sources */,
 				8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
