@@ -5,7 +5,7 @@ protocol WriteRubyPresenterInput {
 }
 
 protocol WriteRubyPresenterOutput {
-    func showAlert(ruby: String, text: String)
+    func showRubyAlert(sentences: String, rubySentense: String)
 }
 
 class WriteRubyPresenter: WriteRubyPresenterInput {
@@ -19,12 +19,8 @@ class WriteRubyPresenter: WriteRubyPresenterInput {
     }
     
     func didTapWriteRubyButton(text: String) {
-        print("didTapSearchBuutton")
-        
-        model.fetchRubySentence(sentence: "今日は良い電気です") { (hiragana) in
-            
+        model.fetchRubySentence(sentence: text) { (rubySentense) in
+            self.view.showRubyAlert(sentences: text,  rubySentense: rubySentense)
         }
-        
-        self.view.showAlert(ruby: text, text: "Text")
     }
 }

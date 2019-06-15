@@ -11,14 +11,15 @@ class WriteRubyViewController: UIViewController {
         
         presenter = WriteRubyPresenter(view: self)
 
-        view.backgroundColor = .white
+        view.backgroundColor = .lightGray
 
         textView = UITextView()
-        textView.backgroundColor = .red
+        textView.backgroundColor = .white
         textView.delegate = self
         view.addSubview(textView)
 
         writeRubyButton = UIButton()
+        writeRubyButton.setTitle("ルビを振る", for: .normal)
         writeRubyButton.backgroundColor = .blue
         writeRubyButton.addTarget(self, action: #selector(didButtonTap), for: .touchUpInside)
         view.addSubview(writeRubyButton)
@@ -26,11 +27,16 @@ class WriteRubyViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
+        
         let width = view.frame.width
-        let heigth = view.frame.height
-        textView.frame = CGRect(x: width * 0.1, y: heigth * 0.2, width: width * 0.8, height: heigth * 0.2)
-        writeRubyButton.frame = CGRect(x: width * 0.1, y: heigth * 0.5, width: width * 0.8, height: heigth * 0.1)
+//        let heigth = view.frame.height
+        let topSafeAreaHeight = view.safeAreaInsets.top
+        let textViewHeight: CGFloat = 200
+        let rubyButtonHeight: CGFloat = 60
+        let margin: CGFloat = 32
+        
+        textView.frame = CGRect(x: 0, y: topSafeAreaHeight, width: width, height: textViewHeight)
+        writeRubyButton.frame = CGRect(x: width * 0.1, y: topSafeAreaHeight + textViewHeight + margin, width: width * 0.8, height: rubyButtonHeight)
     }
     
     @objc private func didButtonTap() {
@@ -50,8 +56,11 @@ extension WriteRubyViewController: UITextViewDelegate {
 
 
 extension WriteRubyViewController: WriteRubyPresenterOutput {
-    func showAlert(ruby: String, text: String) {
-        print(ruby, text)
+    func showRubyAlert(sentences: String, rubySentense: String ) {
+        let rubyAlertViewController = RubyAlertViewController(rubySentense: rubySentense)
+        rubyAlertViewController.modalPresentationStyle = .overCurrentContext
+        rubyAlertViewController.modalTransitionStyle = .crossDissolve
+        present(rubyAlertViewController, animated: true, completion: nil)
     }
 }
 

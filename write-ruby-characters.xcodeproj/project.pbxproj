@@ -14,6 +14,7 @@
 		8D76822C22B4AF5300C06BC9 /* WriteRubyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */; };
 		8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822D22B4BD9900C06BC9 /* APIResponse.swift */; };
 		8D76823022B4C27200C06BC9 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822F22B4C27200C06BC9 /* Credential.swift */; };
+		8D76823322B4CDFD00C06BC9 /* RubyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76823222B4CDFD00C06BC9 /* RubyAlertViewController.swift */; };
 		8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28C22B29897003AC446 /* AppDelegate.swift */; };
 		8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */; };
 		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyModel.swift; sourceTree = "<group>"; };
 		8D76822D22B4BD9900C06BC9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		8D76822F22B4C27200C06BC9 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		8D76823222B4CDFD00C06BC9 /* RubyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyAlertViewController.swift; sourceTree = "<group>"; };
 		8DE6A28922B29897003AC446 /* write-ruby-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "write-ruby-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A28C22B29897003AC446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = WriteRuby;
 			sourceTree = "<group>";
 		};
+		8D76823122B4CD8600C06BC9 /* RubyAlert */ = {
+			isa = PBXGroup;
+			children = (
+				8D76823222B4CDFD00C06BC9 /* RubyAlertViewController.swift */,
+			);
+			path = RubyAlert;
+			sourceTree = "<group>";
+		};
 		8DE6A28022B29897003AC446 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 				8D76822D22B4BD9900C06BC9 /* APIResponse.swift */,
 				8D76822F22B4C27200C06BC9 /* Credential.swift */,
 				8D76822622B49B0C00C06BC9 /* WriteRuby */,
+				8D76823122B4CD8600C06BC9 /* RubyAlert */,
 				8DE6A29322B29898003AC446 /* Assets.xcassets */,
 				8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */,
 				8DE6A29822B29898003AC446 /* Info.plist */,
@@ -404,6 +415,7 @@
 			files = (
 				8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */,
 				8D76822C22B4AF5300C06BC9 /* WriteRubyModel.swift in Sources */,
+				8D76823322B4CDFD00C06BC9 /* RubyAlertViewController.swift in Sources */,
 				8D76822A22B49D0900C06BC9 /* WriteRubyPresenter.swift in Sources */,
 				8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */,
 				8D76823022B4C27200C06BC9 /* Credential.swift in Sources */,

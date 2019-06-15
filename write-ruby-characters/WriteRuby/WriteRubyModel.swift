@@ -29,8 +29,7 @@ class WriteRubyModel: WriteRubyModelInput {
                     return
                 }
 
-                print(apiResponse.converted)
-//                completion(apiResponse)
+                completion(apiResponse.converted)
 
             case .failure(let error):
                 print(error)
