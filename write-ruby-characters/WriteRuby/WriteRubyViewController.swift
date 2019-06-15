@@ -2,6 +2,7 @@ import UIKit
 
 class WriteRubyViewController: UIViewController {
     var textView: UITextView!
+    var clearButton: UIButton!
     var writeRubyButton: UIButton!
 
     var presenter: WriteRubyPresenter!
@@ -11,17 +12,32 @@ class WriteRubyViewController: UIViewController {
         
         presenter = WriteRubyPresenter(view: self)
 
-        view.backgroundColor = .lightGray
+        view.backgroundColor = UIColor(named: "backgroundGray")
+        navigationController?.navigationBar.barTintColor = UIColor(named: "baseOrange")
 
         textView = UITextView()
         textView.backgroundColor = .white
         textView.delegate = self
+        textView.layer.borderWidth = 1.0
+        textView.layer.borderColor = UIColor.gray.cgColor
+        textView.textColor = UIColor.gray
+        textView.font = UIFont.systemFont(ofSize: 18)
         view.addSubview(textView)
-
+        
+        clearButton = UIButton()
+        clearButton.setTitle("クリア", for: .normal)
+        clearButton.backgroundColor = UIColor(named: "baseOrange")
+        clearButton.addTarget(self, action: #selector(didButtonTap), for: .touchUpInside)
+        clearButton.layer.cornerRadius = 16
+        clearButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        view.addSubview(clearButton)
+        
         writeRubyButton = UIButton()
-        writeRubyButton.setTitle("ルビを振る", for: .normal)
-        writeRubyButton.backgroundColor = .blue
+        writeRubyButton.setTitle("ひらがな変換", for: .normal)
+        writeRubyButton.backgroundColor = UIColor(named: "baseOrange")
         writeRubyButton.addTarget(self, action: #selector(didButtonTap), for: .touchUpInside)
+        writeRubyButton.layer.cornerRadius = 16
+        writeRubyButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         view.addSubview(writeRubyButton)
     }
 
@@ -29,14 +45,14 @@ class WriteRubyViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         let width = view.frame.width
-//        let heigth = view.frame.height
         let topSafeAreaHeight = view.safeAreaInsets.top
         let textViewHeight: CGFloat = 200
         let rubyButtonHeight: CGFloat = 60
-        let margin: CGFloat = 32
+        let margin: CGFloat = 16
         
         textView.frame = CGRect(x: 0, y: topSafeAreaHeight, width: width, height: textViewHeight)
-        writeRubyButton.frame = CGRect(x: width * 0.1, y: topSafeAreaHeight + textViewHeight + margin, width: width * 0.8, height: rubyButtonHeight)
+        clearButton.frame = CGRect(x: margin, y: topSafeAreaHeight + textViewHeight + margin, width: width / 2 - margin * 2, height: rubyButtonHeight)
+        writeRubyButton.frame = CGRect(x: width / 2 + margin, y: topSafeAreaHeight + textViewHeight + margin, width: width / 2 - margin * 2, height: rubyButtonHeight)
     }
     
     @objc private func didButtonTap() {
