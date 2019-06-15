@@ -10,13 +10,13 @@
 		2881EFC9E387D4C8867E6271 /* Pods_write_ruby_charactersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B336F42BE78623C0232581F /* Pods_write_ruby_charactersUITests.framework */; };
 		793EFBA2A1035008023FD344 /* Pods_write_ruby_characters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */; };
 		7B6CB19EF156B49FBED5B642 /* Pods_write_ruby_charactersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38C9EFB1E825EDC9D6C970 /* Pods_write_ruby_charactersTests.framework */; };
-		8D76822A22B49D0900C06BC9 /* WriteRubyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822922B49D0900C06BC9 /* WriteRubyPresenter.swift */; };
-		8D76822C22B4AF5300C06BC9 /* WriteRubyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */; };
+		8D76822A22B49D0900C06BC9 /* HiraganaConvertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822922B49D0900C06BC9 /* HiraganaConvertPresenter.swift */; };
+		8D76822C22B4AF5300C06BC9 /* HiraganaConvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822B22B4AF5300C06BC9 /* HiraganaConvertModel.swift */; };
 		8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822D22B4BD9900C06BC9 /* APIResponse.swift */; };
 		8D76823022B4C27200C06BC9 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822F22B4C27200C06BC9 /* Credential.swift */; };
-		8D76823322B4CDFD00C06BC9 /* RubyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76823222B4CDFD00C06BC9 /* RubyAlertViewController.swift */; };
+		8D76823322B4CDFD00C06BC9 /* HiraganaAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76823222B4CDFD00C06BC9 /* HiraganaAlertViewController.swift */; };
 		8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28C22B29897003AC446 /* AppDelegate.swift */; };
-		8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */; };
+		8DE6A28F22B29897003AC446 /* HiraganaConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */; };
 		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
 		8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */; };
 		8DE6A2A222B29898003AC446 /* write_ruby_charactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */; };
@@ -47,14 +47,14 @@
 		5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_write_ruby_characters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B336F42BE78623C0232581F /* Pods_write_ruby_charactersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_write_ruby_charactersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ECB8A6D02C0104FA3222E5 /* Pods-write-ruby-characters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-characters.release.xcconfig"; path = "Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters.release.xcconfig"; sourceTree = "<group>"; };
-		8D76822922B49D0900C06BC9 /* WriteRubyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyPresenter.swift; sourceTree = "<group>"; };
-		8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyModel.swift; sourceTree = "<group>"; };
+		8D76822922B49D0900C06BC9 /* HiraganaConvertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertPresenter.swift; sourceTree = "<group>"; };
+		8D76822B22B4AF5300C06BC9 /* HiraganaConvertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertModel.swift; sourceTree = "<group>"; };
 		8D76822D22B4BD9900C06BC9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		8D76822F22B4C27200C06BC9 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
-		8D76823222B4CDFD00C06BC9 /* RubyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyAlertViewController.swift; sourceTree = "<group>"; };
+		8D76823222B4CDFD00C06BC9 /* HiraganaAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaAlertViewController.swift; sourceTree = "<group>"; };
 		8DE6A28922B29897003AC446 /* write-ruby-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "write-ruby-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A28C22B29897003AC446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyViewController.swift; sourceTree = "<group>"; };
+		8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertViewController.swift; sourceTree = "<group>"; };
 		8DE6A29322B29898003AC446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE6A29622B29898003AC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DE6A29822B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		8D76822622B49B0C00C06BC9 /* WriteRuby */ = {
 			isa = PBXGroup;
 			children = (
-				8D76822B22B4AF5300C06BC9 /* WriteRubyModel.swift */,
-				8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */,
-				8D76822922B49D0900C06BC9 /* WriteRubyPresenter.swift */,
+				8D76822B22B4AF5300C06BC9 /* HiraganaConvertModel.swift */,
+				8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */,
+				8D76822922B49D0900C06BC9 /* HiraganaConvertPresenter.swift */,
 			);
 			path = WriteRuby;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 		8D76823122B4CD8600C06BC9 /* RubyAlert */ = {
 			isa = PBXGroup;
 			children = (
-				8D76823222B4CDFD00C06BC9 /* RubyAlertViewController.swift */,
+				8D76823222B4CDFD00C06BC9 /* HiraganaAlertViewController.swift */,
 			);
 			path = RubyAlert;
 			sourceTree = "<group>";
@@ -413,10 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */,
-				8D76822C22B4AF5300C06BC9 /* WriteRubyModel.swift in Sources */,
-				8D76823322B4CDFD00C06BC9 /* RubyAlertViewController.swift in Sources */,
-				8D76822A22B49D0900C06BC9 /* WriteRubyPresenter.swift in Sources */,
+				8DE6A28F22B29897003AC446 /* HiraganaConvertViewController.swift in Sources */,
+				8D76822C22B4AF5300C06BC9 /* HiraganaConvertModel.swift in Sources */,
+				8D76823322B4CDFD00C06BC9 /* HiraganaAlertViewController.swift in Sources */,
+				8D76822A22B49D0900C06BC9 /* HiraganaConvertPresenter.swift in Sources */,
 				8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */,
 				8D76823022B4C27200C06BC9 /* Credential.swift in Sources */,
 				8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */,

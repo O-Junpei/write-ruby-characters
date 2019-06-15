@@ -1,11 +1,11 @@
 import UIKit
 
-class RubyAlertViewController: UIViewController {
+class HiraganaAlertViewController: UIViewController {
     
-    let rubySentense: String
+    let hiragana: String
     
-    init(rubySentense: String) {
-        self.rubySentense = rubySentense
+    init(hiragana: String) {
+        self.hiragana = hiragana
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -43,7 +43,7 @@ class RubyAlertViewController: UIViewController {
         view.addSubview(baseView)
         
         let textView = UITextView()
-        textView.text = rubySentense
+        textView.text = hiragana
         textView.frame = CGRect(x: margin, y: margin, width: alertWidth - margin * 2, height: 0)
         textView.font = UIFont.systemFont(ofSize: 20)
         textView.textColor = .gray
