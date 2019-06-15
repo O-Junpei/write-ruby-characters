@@ -2,10 +2,14 @@ import UIKit
 
 class WriteRubyViewController: UIViewController {
     var textView: UITextView!
-    var button: UIButton!
+    var writeRubyButton: UIButton!
 
+    var presenter: WriteRubyPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presenter = WriteRubyPresenter(view: self)
 
         view.backgroundColor = .white
 
@@ -13,9 +17,10 @@ class WriteRubyViewController: UIViewController {
         textView.backgroundColor = .red
         view.addSubview(textView)
 
-        button = UIButton()
-        button.backgroundColor = .blue
-        view.addSubview(button)
+        writeRubyButton = UIButton()
+        writeRubyButton.backgroundColor = .blue
+        writeRubyButton.addTarget(self, action: #selector(didButtonTap), for: .touchUpInside)
+        view.addSubview(writeRubyButton)
     }
 
     override func viewDidLayoutSubviews() {
@@ -24,7 +29,21 @@ class WriteRubyViewController: UIViewController {
         let width = view.frame.width
         let heigth = view.frame.height
         textView.frame = CGRect(x: width * 0.1, y: heigth * 0.2, width: width * 0.8, height: heigth * 0.2)
-        button.frame = CGRect(x: width * 0.1, y: heigth * 0.5, width: width * 0.8, height: heigth * 0.1)
+        writeRubyButton.frame = CGRect(x: width * 0.1, y: heigth * 0.5, width: width * 0.8, height: heigth * 0.1)
+    }
+    
+    @objc private func didButtonTap() {
+        guard let text = textView.text else {
+            return
+        }
+        presenter.didTapWriteRubyButton(text: text)
+    }
+}
+
+
+extension WriteRubyViewController: WriteRubyPresenterOutput {
+    func showAlert(ruby: String, text: String) {
+        print(ruby, text)
     }
 }
 
