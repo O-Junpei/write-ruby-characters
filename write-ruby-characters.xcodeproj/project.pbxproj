@@ -11,8 +11,7 @@
 		793EFBA2A1035008023FD344 /* Pods_write_ruby_characters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */; };
 		7B6CB19EF156B49FBED5B642 /* Pods_write_ruby_charactersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38C9EFB1E825EDC9D6C970 /* Pods_write_ruby_charactersTests.framework */; };
 		8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28C22B29897003AC446 /* AppDelegate.swift */; };
-		8DE6A28F22B29897003AC446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* ViewController.swift */; };
-		8DE6A29222B29897003AC446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29022B29897003AC446 /* Main.storyboard */; };
+		8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */; };
 		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
 		8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */; };
 		8DE6A2A222B29898003AC446 /* write_ruby_charactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */; };
@@ -45,8 +44,7 @@
 		83ECB8A6D02C0104FA3222E5 /* Pods-write-ruby-characters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-characters.release.xcconfig"; path = "Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters.release.xcconfig"; sourceTree = "<group>"; };
 		8DE6A28922B29897003AC446 /* write-ruby-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "write-ruby-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A28C22B29897003AC446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DE6A28E22B29897003AC446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8DE6A29122B29897003AC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRubyViewController.swift; sourceTree = "<group>"; };
 		8DE6A29322B29898003AC446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE6A29622B29898003AC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DE6A29822B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +97,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D76822622B49B0C00C06BC9 /* WriteRuby */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6A28E22B29897003AC446 /* WriteRubyViewController.swift */,
+			);
+			path = WriteRuby;
+			sourceTree = "<group>";
+		};
 		8DE6A28022B29897003AC446 = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE6A28C22B29897003AC446 /* AppDelegate.swift */,
-				8DE6A28E22B29897003AC446 /* ViewController.swift */,
-				8DE6A29022B29897003AC446 /* Main.storyboard */,
+				8D76822622B49B0C00C06BC9 /* WriteRuby */,
 				8DE6A29322B29898003AC446 /* Assets.xcassets */,
 				8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */,
 				8DE6A29822B29898003AC446 /* Info.plist */,
@@ -162,7 +167,6 @@
 				24785D07886AD93958FC0A01 /* Pods-write-ruby-charactersUITests.debug.xcconfig */,
 				CD773D1683AFB8A2FBDCB0A9 /* Pods-write-ruby-charactersUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,7 +279,6 @@
 			files = (
 				8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */,
 				8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */,
-				8DE6A29222B29897003AC446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE6A28F22B29897003AC446 /* ViewController.swift in Sources */,
+				8DE6A28F22B29897003AC446 /* WriteRubyViewController.swift in Sources */,
 				8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8DE6A29022B29897003AC446 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8DE6A29122B29897003AC446 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  write-ruby-characters
-//
-//  Created by junpei ono on 2019/06/13.
-//  Copyright © 2019 com.swiswiswift. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +7,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController(rootViewController: WriteRubyViewController())
+        window?.makeKeyAndVisible()
         return true
     }
 
