@@ -7,7 +7,7 @@ target 'write-ruby-characters' do
 
   # Pods for write-ruby-characters
   pod 'Alamofire'
-
+  pod 'NVActivityIndicatorView'
   target 'write-ruby-charactersTests' do
     inherit! :search_paths
     # Pods for testing

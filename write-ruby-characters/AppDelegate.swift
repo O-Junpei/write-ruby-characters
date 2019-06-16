@@ -4,12 +4,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        let hiraganaConvertViewController = HiraganaConvertViewController()
+        let navigationController = UINavigationController(rootViewController: hiraganaConvertViewController)
+        let model = HiraganaConvertModel()
+        let presenter = HiraganaConvertPresenter(view: hiraganaConvertViewController, model: model)
+        hiraganaConvertViewController.inject(presenter: presenter)
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: HiraganaConvertViewController())
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
     }

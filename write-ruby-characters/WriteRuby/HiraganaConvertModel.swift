@@ -19,12 +19,8 @@ class HiraganaConvertModel: HiraganaConvertModelInput {
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
             switch response.result {
             case .success:
-                guard let data = response.data else {
-                    completion(nil)
-                    return
-                }
                 
-                guard let apiResponse = try? JSONDecoder().decode(APIResponse.self, from: data) else {
+                guard let data = response.data, let apiResponse = try? JSONDecoder().decode(APIResponse.self, from: data) else {
                     completion(nil)
                     return
                 }

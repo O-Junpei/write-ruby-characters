@@ -1,17 +1,21 @@
 import UIKit
+import NVActivityIndicatorView
 
 class HiraganaConvertViewController: UIViewController {
     var textView: UITextView!
     var clearButton: UIButton!
     var convertButton: UIButton!
+    var indicator: NVActivityIndicatorView!
 
-    var presenter: HiraganaConvertPresenter!
+    var presenter: HiraganaConvertPresenterInput!
+    
+    func inject(presenter: HiraganaConvertPresenterInput) {
+        self.presenter = presenter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter = HiraganaConvertPresenter(view: self)
-
         view.backgroundColor = UIColor(named: "backgroundGray")
         navigationController?.navigationBar.barTintColor = UIColor(named: "baseOrange")
 
@@ -26,7 +30,7 @@ class HiraganaConvertViewController: UIViewController {
         
         clearButton = UIButton()
         clearButton.setTitle("クリア", for: .normal)
-        clearButton.backgroundColor = .gray
+        clearButton.backgroundColor = UIColor(named: "buttonDisableGray")
         clearButton.isEnabled = false
         clearButton.addTarget(self, action: #selector(didClearButtonTap), for: .touchUpInside)
         clearButton.layer.cornerRadius = 16
@@ -35,12 +39,15 @@ class HiraganaConvertViewController: UIViewController {
         
         convertButton = UIButton()
         convertButton.setTitle("ひらがな変換", for: .normal)
-        convertButton.backgroundColor = .gray
+        convertButton.backgroundColor = UIColor(named: "buttonDisableGray")
         convertButton.isEnabled = false
         convertButton.addTarget(self, action: #selector(didButtonTap), for: .touchUpInside)
         convertButton.layer.cornerRadius = 16
         convertButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         view.addSubview(convertButton)
+        
+        indicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 120, height: 120), type: .ballClipRotateMultiple, color: UIColor(named: "baseOrange"), padding: 0)
+        view.addSubview(indicator)
     }
 
     override func viewDidLayoutSubviews() {
@@ -55,6 +62,7 @@ class HiraganaConvertViewController: UIViewController {
         textView.frame = CGRect(x: 0, y: topSafeAreaHeight, width: width, height: textViewHeight)
         clearButton.frame = CGRect(x: margin, y: topSafeAreaHeight + textViewHeight + margin, width: width / 2 - margin * 2, height: rubyButtonHeight)
         convertButton.frame = CGRect(x: width / 2 + margin, y: topSafeAreaHeight + textViewHeight + margin, width: width / 2 - margin * 2, height: rubyButtonHeight)
+        indicator.center = view.center
     }
     
     @objc private func didClearButtonTap() {
@@ -94,7 +102,7 @@ extension HiraganaConvertViewController: HiraganaConvertPresenterOutput {
             clearButton.backgroundColor = UIColor(named: "baseOrange")
         } else {
             clearButton.isEnabled = false
-            clearButton.backgroundColor = UIColor.gray
+            clearButton.backgroundColor = UIColor(named: "buttonDisableGray")
         }
     }
     
@@ -104,12 +112,20 @@ extension HiraganaConvertViewController: HiraganaConvertPresenterOutput {
             convertButton.backgroundColor = UIColor(named: "baseOrange")
         } else {
             convertButton.isEnabled = false
-            convertButton.backgroundColor = UIColor.gray
+            convertButton.backgroundColor = UIColor(named: "buttonDisableGray")
         }
     }
     
     func updateTextViewText(text: String) {
         textView.text = text
+    }
+    
+    func updateIndicatorAnimating(isStart: Bool) {
+        if isStart {
+            indicator.startAnimating()
+        } else {
+            indicator.stopAnimating()
+        }
     }
     
     func presentToRubyAlertViewController(hiragana: String ) {
