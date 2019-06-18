@@ -1,11 +1,3 @@
-//
-//  write_ruby_charactersTests.swift
-//  write-ruby-charactersTests
-//
-//  Created by junpei ono on 2019/06/13.
-//  Copyright © 2019 com.swiswiswift. All rights reserved.
-//
-
 import XCTest
 @testable import write_ruby_characters
 

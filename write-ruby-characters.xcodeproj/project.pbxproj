@@ -15,6 +15,8 @@
 		8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822D22B4BD9900C06BC9 /* APIResponse.swift */; };
 		8D76823022B4C27200C06BC9 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822F22B4C27200C06BC9 /* Credential.swift */; };
 		8D76823322B4CDFD00C06BC9 /* HiraganaAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76823222B4CDFD00C06BC9 /* HiraganaAlertViewController.swift */; };
+		8DD41B9022B913A100109845 /* HiraganaConvertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD41B8F22B913A100109845 /* HiraganaConvertPresenterTests.swift */; };
+		8DD41B9222B9142400109845 /* HiraganaConvertModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD41B9122B9142400109845 /* HiraganaConvertModelTests.swift */; };
 		8DE6A28D22B29897003AC446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28C22B29897003AC446 /* AppDelegate.swift */; };
 		8DE6A28F22B29897003AC446 /* HiraganaConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */; };
 		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		8D76822D22B4BD9900C06BC9 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		8D76822F22B4C27200C06BC9 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		8D76823222B4CDFD00C06BC9 /* HiraganaAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaAlertViewController.swift; sourceTree = "<group>"; };
+		8DD41B8F22B913A100109845 /* HiraganaConvertPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertPresenterTests.swift; sourceTree = "<group>"; };
+		8DD41B9122B9142400109845 /* HiraganaConvertModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertModelTests.swift; sourceTree = "<group>"; };
 		8DE6A28922B29897003AC446 /* write-ruby-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "write-ruby-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A28C22B29897003AC446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertViewController.swift; sourceTree = "<group>"; };
@@ -107,22 +111,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8D76822622B49B0C00C06BC9 /* WriteRuby */ = {
+		8D76822622B49B0C00C06BC9 /* HiraganaConvert */ = {
 			isa = PBXGroup;
 			children = (
 				8D76822B22B4AF5300C06BC9 /* HiraganaConvertModel.swift */,
 				8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */,
 				8D76822922B49D0900C06BC9 /* HiraganaConvertPresenter.swift */,
 			);
-			path = WriteRuby;
+			path = HiraganaConvert;
 			sourceTree = "<group>";
 		};
-		8D76823122B4CD8600C06BC9 /* RubyAlert */ = {
+		8D76823122B4CD8600C06BC9 /* HiraganaAlert */ = {
 			isa = PBXGroup;
 			children = (
 				8D76823222B4CDFD00C06BC9 /* HiraganaAlertViewController.swift */,
 			);
-			path = RubyAlert;
+			path = HiraganaAlert;
 			sourceTree = "<group>";
 		};
 		8DE6A28022B29897003AC446 = {
@@ -153,8 +157,8 @@
 				8DE6A28C22B29897003AC446 /* AppDelegate.swift */,
 				8D76822D22B4BD9900C06BC9 /* APIResponse.swift */,
 				8D76822F22B4C27200C06BC9 /* Credential.swift */,
-				8D76822622B49B0C00C06BC9 /* WriteRuby */,
-				8D76823122B4CD8600C06BC9 /* RubyAlert */,
+				8D76822622B49B0C00C06BC9 /* HiraganaConvert */,
+				8D76823122B4CD8600C06BC9 /* HiraganaAlert */,
 				8DE6A29322B29898003AC446 /* Assets.xcassets */,
 				8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */,
 				8DE6A29822B29898003AC446 /* Info.plist */,
@@ -166,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */,
+				8DD41B9122B9142400109845 /* HiraganaConvertModelTests.swift */,
+				8DD41B8F22B913A100109845 /* HiraganaConvertPresenterTests.swift */,
 				8DE6A2A322B29898003AC446 /* Info.plist */,
 			);
 			path = "write-ruby-charactersTests";
@@ -427,6 +433,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD41B9022B913A100109845 /* HiraganaConvertPresenterTests.swift in Sources */,
+				8DD41B9222B9142400109845 /* HiraganaConvertModelTests.swift in Sources */,
 				8DE6A2A222B29898003AC446 /* write_ruby_charactersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
