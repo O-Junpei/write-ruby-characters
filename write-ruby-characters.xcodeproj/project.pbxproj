@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2881EFC9E387D4C8867E6271 /* Pods_write_ruby_charactersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B336F42BE78623C0232581F /* Pods_write_ruby_charactersUITests.framework */; };
 		793EFBA2A1035008023FD344 /* Pods_write_ruby_characters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */; };
-		7B6CB19EF156B49FBED5B642 /* Pods_write_ruby_charactersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38C9EFB1E825EDC9D6C970 /* Pods_write_ruby_charactersTests.framework */; };
 		8D76822A22B49D0900C06BC9 /* HiraganaConvertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822922B49D0900C06BC9 /* HiraganaConvertPresenter.swift */; };
 		8D76822C22B4AF5300C06BC9 /* HiraganaConvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822B22B4AF5300C06BC9 /* HiraganaConvertModel.swift */; };
 		8D76822E22B4BD9900C06BC9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76822D22B4BD9900C06BC9 /* APIResponse.swift */; };
@@ -23,6 +21,8 @@
 		8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */; };
 		8DE6A2A222B29898003AC446 /* write_ruby_charactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2A122B29898003AC446 /* write_ruby_charactersTests.swift */; };
 		8DE6A2AD22B29898003AC446 /* write_ruby_charactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */; };
+		A4DB66F9F2009B1742D9390C /* libPods-write-ruby-charactersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F56A86FE3C168897BE37C5 /* libPods-write-ruby-charactersTests.a */; };
+		EC441529A6A8ED06A4CE8269 /* libPods-write-ruby-charactersUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 118DAA26D6F40390701D9235 /* libPods-write-ruby-charactersUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,9 @@
 /* Begin PBXFileReference section */
 		029EE8ED1A3DC0E1515D2F34 /* Pods-write-ruby-charactersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-charactersTests.debug.xcconfig"; path = "Target Support Files/Pods-write-ruby-charactersTests/Pods-write-ruby-charactersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0DF94A48779C005ED2B216D9 /* Pods-write-ruby-characters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-characters.debug.xcconfig"; path = "Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters.debug.xcconfig"; sourceTree = "<group>"; };
+		118DAA26D6F40390701D9235 /* libPods-write-ruby-charactersUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-write-ruby-charactersUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24785D07886AD93958FC0A01 /* Pods-write-ruby-charactersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-charactersUITests.debug.xcconfig"; path = "Target Support Files/Pods-write-ruby-charactersUITests/Pods-write-ruby-charactersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_write_ruby_characters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B336F42BE78623C0232581F /* Pods_write_ruby_charactersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_write_ruby_charactersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ECB8A6D02C0104FA3222E5 /* Pods-write-ruby-characters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-characters.release.xcconfig"; path = "Target Support Files/Pods-write-ruby-characters/Pods-write-ruby-characters.release.xcconfig"; sourceTree = "<group>"; };
 		8D76822922B49D0900C06BC9 /* HiraganaConvertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertPresenter.swift; sourceTree = "<group>"; };
 		8D76822B22B4AF5300C06BC9 /* HiraganaConvertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConvertModel.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		8DE6A2A822B29898003AC446 /* write-ruby-charactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "write-ruby-charactersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = write_ruby_charactersUITests.swift; sourceTree = "<group>"; };
 		8DE6A2AE22B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D38C9EFB1E825EDC9D6C970 /* Pods_write_ruby_charactersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_write_ruby_charactersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F56A86FE3C168897BE37C5 /* libPods-write-ruby-charactersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-write-ruby-charactersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD773D1683AFB8A2FBDCB0A9 /* Pods-write-ruby-charactersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-charactersUITests.release.xcconfig"; path = "Target Support Files/Pods-write-ruby-charactersUITests/Pods-write-ruby-charactersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA2CB9F40457F2F1FCE7341C /* Pods-write-ruby-charactersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-write-ruby-charactersTests.release.xcconfig"; path = "Target Support Files/Pods-write-ruby-charactersTests/Pods-write-ruby-charactersTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6CB19EF156B49FBED5B642 /* Pods_write_ruby_charactersTests.framework in Frameworks */,
+				A4DB66F9F2009B1742D9390C /* libPods-write-ruby-charactersTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2881EFC9E387D4C8867E6271 /* Pods_write_ruby_charactersUITests.framework in Frameworks */,
+				EC441529A6A8ED06A4CE8269 /* libPods-write-ruby-charactersUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				5BB273F51778522ABD87F1DA /* Pods_write_ruby_characters.framework */,
-				9D38C9EFB1E825EDC9D6C970 /* Pods_write_ruby_charactersTests.framework */,
-				7B336F42BE78623C0232581F /* Pods_write_ruby_charactersUITests.framework */,
+				C4F56A86FE3C168897BE37C5 /* libPods-write-ruby-charactersTests.a */,
+				118DAA26D6F40390701D9235 /* libPods-write-ruby-charactersUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

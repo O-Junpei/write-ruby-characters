@@ -36,21 +36,23 @@ class HiraganaAlertViewController: UIViewController {
         let margin: CGFloat = 24
         
         let baseView = UIView()
+        baseView.accessibilityIdentifier = "baseView"
         baseView.backgroundColor = .white
         baseView.layer.cornerRadius = 32
         baseView.layer.borderWidth = 1.0
         baseView.layer.borderColor = UIColor.gray.cgColor
         view.addSubview(baseView)
         
-        let textView = UITextView()
-        textView.text = hiragana
-        textView.frame = CGRect(x: margin, y: margin, width: alertWidth - margin * 2, height: 0)
-        textView.font = UIFont.systemFont(ofSize: 20)
-        textView.textColor = .gray
-        textView.sizeToFit()
-        baseView.addSubview(textView)
+        let hiraganaTextView = UITextView()
+        hiraganaTextView.accessibilityIdentifier = "hiraganaTextView"
+        hiraganaTextView.text = hiragana
+        hiraganaTextView.frame = CGRect(x: margin, y: margin, width: alertWidth - margin * 2, height: 0)
+        hiraganaTextView.font = UIFont.systemFont(ofSize: 20)
+        hiraganaTextView.textColor = .gray
+        hiraganaTextView.sizeToFit()
+        baseView.addSubview(hiraganaTextView)
         
-        let textViewHeight = textView.frame.size.height
+        let textViewHeight = hiraganaTextView.frame.size.height
         
         let closeButton = UIButton()
         closeButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)

@@ -74,14 +74,19 @@ class HiraganaConvertPresenterTests: XCTestCase {
     
     func testDidTapConvertButton() {
         
-        // hurigana に きょうは いい てんきです が入ることをアサート
+        // hurigana に きょうは いい てんきです が入る
         let presenter = HiraganaConvertPresenter(view: view, model: model)
         view.inject(presenter: presenter)
         
         view.didTapConvertButton(text: "今日はいい天気です")
 
+        let exp = expectation(description: "DidTapConvertButton Test")
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             XCTAssertEqual(self.view.hiragana, "きょうは いい てんきです")
+            exp.fulfill()
         }
+        
+        wait(for: [exp], timeout: 10.0)
     }
 }

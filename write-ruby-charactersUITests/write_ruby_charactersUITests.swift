@@ -1,11 +1,3 @@
-//
-//  write_ruby_charactersUITests.swift
-//  write-ruby-charactersUITests
-//
-//  Created by junpei ono on 2019/06/13.
-//  Copyright © 2019 com.swiswiswift. All rights reserved.
-//
-
 import XCTest
 
 class write_ruby_charactersUITests: XCTestCase {
@@ -27,8 +19,22 @@ class write_ruby_charactersUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        
+        let app = XCUIApplication()
+        
+        let convertButton = app.buttons["convertButton"]
+        
+        // 初期状態では disAble
+        XCTAssertFalse(convertButton.isEnabled)
 
+        let textView = app.textViews["textView"]
+        textView.tap()
+        textView.typeText("今日はいい天気です")
+        convertButton.tap()
+        
+        sleep(4)
+        
+        let hiraganaTextView = app.textViews["hiraganaTextView"]
+        XCTAssertEqual(hiraganaTextView.value as? String, "きょうは いい てんきです")
+    }
 }

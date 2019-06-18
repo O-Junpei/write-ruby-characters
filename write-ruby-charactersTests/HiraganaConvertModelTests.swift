@@ -12,7 +12,7 @@ class HiraganaConvertModelTests: XCTestCase {
     }
     
     func testFetchRubySentence() {
-        // 今日はいい天気です を渡すと きょうは いい てんきです が返ることをアサート
+        // 今日はいい天気です を渡すと きょうは いい てんきです が返る
         let exp = expectation(description: "Model Test")
 
         let model = HiraganaConvertModel()

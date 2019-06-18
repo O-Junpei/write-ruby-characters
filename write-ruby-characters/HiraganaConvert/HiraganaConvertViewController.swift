@@ -26,6 +26,7 @@ class HiraganaConvertViewController: UIViewController {
         textView.layer.borderColor = UIColor.gray.cgColor
         textView.textColor = UIColor.gray
         textView.font = UIFont.systemFont(ofSize: 20)
+        textView.autocorrectionType = .no
         view.addSubview(textView)
         
         clearButton = UIButton()
