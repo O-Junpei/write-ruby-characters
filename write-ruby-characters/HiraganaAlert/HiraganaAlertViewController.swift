@@ -45,6 +45,7 @@ class HiraganaAlertViewController: UIViewController {
         
         let hiraganaTextView = UITextView()
         hiraganaTextView.accessibilityIdentifier = "hiraganaTextView"
+        hiraganaTextView.accessibilityIdentifier = "hiraganaTextView"
         hiraganaTextView.text = hiragana
         hiraganaTextView.frame = CGRect(x: margin, y: margin, width: alertWidth - margin * 2, height: 0)
         hiraganaTextView.font = UIFont.systemFont(ofSize: 20)

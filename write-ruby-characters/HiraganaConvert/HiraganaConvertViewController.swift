@@ -20,6 +20,7 @@ class HiraganaConvertViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor(named: "baseOrange")
 
         textView = UITextView()
+        textView.accessibilityIdentifier = "textView"
         textView.backgroundColor = .white
         textView.delegate = self
         textView.layer.borderWidth = 1.0
@@ -39,6 +40,7 @@ class HiraganaConvertViewController: UIViewController {
         view.addSubview(clearButton)
         
         convertButton = UIButton()
+        convertButton.accessibilityIdentifier = "convertButton"
         convertButton.setTitle("ひらがな変換", for: .normal)
         convertButton.backgroundColor = UIColor(named: "buttonDisableGray")
         convertButton.isEnabled = false
