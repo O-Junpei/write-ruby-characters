@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'write-ruby-characters' do
+target 'HiraganaConverter' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -10,12 +10,12 @@ target 'write-ruby-characters' do
   pod 'NVActivityIndicatorView'
 end
 
-  target 'write-ruby-charactersTests' do
+  target 'HiraganaConverterTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'write-ruby-charactersUITests' do
+  target 'HiraganaConverterUITests' do
     inherit! :search_paths
     # Pods for testing
   end

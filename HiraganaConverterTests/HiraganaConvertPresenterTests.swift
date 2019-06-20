@@ -1,5 +1,5 @@
 import XCTest
-@testable import write_ruby_characters
+@testable import HiraganaConverter
 
 class MockHiraganaConvertView {
     var text = ""
