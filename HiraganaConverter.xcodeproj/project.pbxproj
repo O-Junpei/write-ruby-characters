@@ -19,7 +19,7 @@
 		8DE6A28F22B29897003AC446 /* HiraganaConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A28E22B29897003AC446 /* HiraganaConvertViewController.swift */; };
 		8DE6A29422B29898003AC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29322B29898003AC446 /* Assets.xcassets */; };
 		8DE6A29722B29898003AC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE6A29522B29898003AC446 /* LaunchScreen.storyboard */; };
-		8DE6A2AD22B29898003AC446 /* write_ruby_charactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */; };
+		8DE6A2AD22B29898003AC446 /* HiraganaConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6A2AC22B29898003AC446 /* HiraganaConverterUITests.swift */; };
 		CCC33D5FB65401A9A1AB9517 /* Pods_HiraganaConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEE0BD167FFCB5D2F4A9C90 /* Pods_HiraganaConverter.framework */; };
 		D8B1068513C649DC5A9B4B11 /* libPods-HiraganaConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4F41CA7532D06E534A805D /* libPods-HiraganaConverterTests.a */; };
 /* End PBXBuildFile section */
@@ -67,7 +67,7 @@
 		8DE6A29D22B29898003AC446 /* HiraganaConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE6A2A322B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DE6A2A822B29898003AC446 /* HiraganaConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = write_ruby_charactersUITests.swift; sourceTree = "<group>"; };
+		8DE6A2AC22B29898003AC446 /* HiraganaConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverterUITests.swift; sourceTree = "<group>"; };
 		8DE6A2AE22B29898003AC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F0137714CADC996EEE71E10 /* Pods-HiraganaConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiraganaConverterUITests.release.xcconfig"; path = "Target Support Files/Pods-HiraganaConverterUITests/Pods-HiraganaConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A2DB0F62C550FB4902091E02 /* libPods-HiraganaConverterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiraganaConverterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +183,7 @@
 		8DE6A2AB22B29898003AC446 /* HiraganaConverterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */,
+				8DE6A2AC22B29898003AC446 /* HiraganaConverterUITests.swift */,
 				8DE6A2AE22B29898003AC446 /* Info.plist */,
 			);
 			path = HiraganaConverterUITests;
@@ -451,7 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE6A2AD22B29898003AC446 /* write_ruby_charactersUITests.swift in Sources */,
+				8DE6A2AD22B29898003AC446 /* HiraganaConverterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
