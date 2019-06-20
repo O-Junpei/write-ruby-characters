@@ -1,5 +1,5 @@
 import XCTest
-@testable import HiraganaConverter
+@testable import write_ruby_characters
 
 class HiraganaConvertModelTests: XCTestCase {
     

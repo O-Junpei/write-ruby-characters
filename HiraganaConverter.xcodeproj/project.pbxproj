@@ -137,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE6A28B22B29897003AC446 /* HiraganaConverter */,
-				8DE6A2A022B29898003AC446 /* HiraganaCOnverterTests */,
-				8DE6A2AB22B29898003AC446 /* write-ruby-charactersUITests */,
+				8DE6A2A022B29898003AC446 /* HiraganaConverterTests */,
+				8DE6A2AB22B29898003AC446 /* HiraganaConverterUITests */,
 				8DE6A28A22B29897003AC446 /* Products */,
 				D64F73C2CF4876F0E13BEFBF /* Pods */,
 				3722E6C9DA01262D90E1D963 /* Frameworks */,
@@ -170,23 +170,23 @@
 			path = HiraganaConverter;
 			sourceTree = "<group>";
 		};
-		8DE6A2A022B29898003AC446 /* HiraganaCOnverterTests */ = {
+		8DE6A2A022B29898003AC446 /* HiraganaConverterTests */ = {
 			isa = PBXGroup;
 			children = (
 				8DD41B9122B9142400109845 /* HiraganaConvertModelTests.swift */,
 				8DD41B8F22B913A100109845 /* HiraganaConvertPresenterTests.swift */,
 				8DE6A2A322B29898003AC446 /* Info.plist */,
 			);
-			path = HiraganaCOnverterTests;
+			path = HiraganaConverterTests;
 			sourceTree = "<group>";
 		};
-		8DE6A2AB22B29898003AC446 /* write-ruby-charactersUITests */ = {
+		8DE6A2AB22B29898003AC446 /* HiraganaConverterUITests */ = {
 			isa = PBXGroup;
 			children = (
 				8DE6A2AC22B29898003AC446 /* write_ruby_charactersUITests.swift */,
 				8DE6A2AE22B29898003AC446 /* Info.plist */,
 			);
-			path = "write-ruby-charactersUITests";
+			path = HiraganaConverterUITests;
 			sourceTree = "<group>";
 		};
 		D64F73C2CF4876F0E13BEFBF /* Pods */ = {
